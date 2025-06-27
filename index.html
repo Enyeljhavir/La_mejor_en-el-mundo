@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Corazón Late por Ti</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="Love__You">
-    <div id="heart" onclick="toggleLove()">❤️</div>
-    <div id="message">Haz clic en el corazón</div>
-  </div>
-  <audio id="audio" src="audio/sonido.mp3" preload="auto"></audio>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Persona Favorita</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="heart" onclick="revealMessage()">❤️</div>
+      <button id="playBtn" onclick="toggleMusic()">🔊 Escuchar</button>
+      <div id="hiddenMessage" class="typing"></div>
+      <audio id="bgMusic" src="audio/fondo.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
